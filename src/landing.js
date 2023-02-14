@@ -26,7 +26,8 @@ export default function Landing() {
   return (
       <>
         <h1><Typewriter onInit={(typewriter)=> {
-          typewriter.typeString("Hi idiot")
+          typewriter.pauseFor(1000)
+          .typeString("Hi idiot")
           .pauseFor(300)
           .deleteChars(5)
           .typeString("there!").start();

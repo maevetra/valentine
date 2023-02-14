@@ -14,7 +14,7 @@ export default function Loading() {
         <div className='wrapper'>
             <h3 className='loading-text'> </h3>
             <ProgressBar />
-            <div className="container">
+            <div className="container-loading">
                 <button type="button" className='view-message'
                 id="view-message" onClick={handleClick}>
                 Open Message

@@ -7,7 +7,7 @@
     display: block;
 }
 
-.container {
+.container-loading {
     display: block;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@
   font-size: 18px;
   display: block;
   margin-top: 12px;
-  padding: 4px;
+  padding: 8px;
   background-color: #fba7bd;
   border-radius: 5px;
   border: none;
@@ -115,24 +115,6 @@
   animation-fill-mode: forwards;
 }
 
-.view-message-1 {
-  margin: 0 auto;
-  font-family: "VT323";
-  color: white;
-  font-size: 18px;
-  display: block;
-  margin-top: 12px;
-  padding: 4px;
-  background-color: #fba7bd;
-  border-radius: 5px;
-  border: none;
-  box-sizing: border-box;
-  padding-top: 4px ;
-  padding-bottom: 4px;
-  left: 20%;
-  top: 30%;
-  position: absolute;
-}
 
 @keyframes btn-fade-in {
   to {opacity: 1;}

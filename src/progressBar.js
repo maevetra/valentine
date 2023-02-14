@@ -4,7 +4,7 @@ import './loading.css';
 
 const ProgressBar = (props) => {
     return (
-        <div className="container">
+        <div className="container-loading">
             <div className="progress-bar__container">
                 <div className="progress-bar">
                 </div>
