@@ -12,7 +12,9 @@ export default function Landing() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (username === 'elank23' & password === '121522010523') {
+    if(username === '' | password === '') {
+
+    } else if (username === 'elank23' & password === '121522010523') {
       console.log('authenticated');
       navigate('/loading', { replace: true });
     } else {
@@ -45,7 +47,7 @@ export default function Landing() {
               <div className="help-tip">
                   <p>Your Instagram handle.</p>
                 </div>
-              <input type="text" id="username" value={username} required
+              <input type="text" id="username" value={username}
               onChange={(event) =>
                   setUsername(event.target.value)} 
               className="form-control" placeholder="Who tf are you?"/>
@@ -55,7 +57,7 @@ export default function Landing() {
             <div className="help-tip">
                   <p>Our 'official' first date + our anniversary (MMDDYYMMDDYY)</p>
                 </div>
-              <input type="password" id="password" value={password} required
+              <input type="password" id="password" value={password}
               onChange={(event) =>
                 setPassword(event.target.value)}
               className="form-control" placeholder="You sure you have access?"/>

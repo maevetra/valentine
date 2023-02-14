@@ -58,7 +58,7 @@ h1, p{
   font-style: italic;
   opacity: 0;
   animation: fade-in 3s;
-  animation-delay: 4s;
+  animation-delay: 4.25s;
   animation-fill-mode: forwards;
 }
 
@@ -94,10 +94,12 @@ form {
   margin-top: 0;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  animation: fade-in 3s 5.5s forwards;
+  visibility: hidden;
+  animation: change-visible 3s 6s forwards;
 }
-
+@keyframes change-visible {
+  to {visibility: visible;}
+}
 
 
 .btn-signin {

@@ -109,7 +109,7 @@
   box-sizing: border-box;
   padding-top: 4px ;
   padding-bottom: 4px;
-  opacity: 0;
+  visibility: hidden;
   animation: btn-fade-in 0.5s;
   animation-delay: 21s;
   animation-fill-mode: forwards;
@@ -117,5 +117,5 @@
 
 
 @keyframes btn-fade-in {
-  to {opacity: 1;}
+  to {visibility: visible;}
 }
