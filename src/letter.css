@@ -8,6 +8,10 @@
   .container {
     position: relative;
     top: 5vmin;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
   .envelope {
@@ -34,9 +38,10 @@
   .message {
     position: absolute;
     top: 4vmin;
-    padding-left: 20px;
-    padding-right: 10px;
-    font-size: 20px;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    text-align: left;
+    font-size: 3vmin;
     font-weight: lighter;
     color: #f980a1;
   }
@@ -114,8 +119,7 @@
     position: relative;
     width: 6vmin;
     height: 5vmin;
-    top: 7.5vmin;
-    left: -1vmin;
+    
     
   }
   img:before,
@@ -130,17 +134,20 @@
     transform: rotate(-45deg);
     transform-origin: 0 100%;
   }
-  .heart:after {
+  img:after {
     left: 0;
     transform: rotate(45deg);
     transform-origin: 100% 100%;
   }
 
-  .instruction{
-    position: relative;
-    margin-top: 25px;
+  .instruction {
+    margin: 0 auto;
+    margin-top: 5vmin;
     font-weight: light;
-    font-size: smaller;
+    font-size: 3vmin;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   
   @keyframes open {
