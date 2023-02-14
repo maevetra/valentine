@@ -1,0 +1,138 @@
+.wrapper {
+    position: absolute;
+    top: 44%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    
+  }
+  
+  .progress-bar__container {
+    width: 100%;
+    height: 20px;
+    border-radius: 3px !important;
+    border-width: 10px;
+    position: relative;
+    overflow: hidden;
+    will-change: transform;
+    box-shadow: 0 0 0 1.5px #fba7bd;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: white;
+    top:0;
+    bottom: 0;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    animation: loading 20s steps(40);
+  }
+  
+  .progress-bar__text {
+    display: none;
+  }
+
+  .loading-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 30;
+    padding-right: 30;
+    font-weight: lighter;
+    font-style: italic;
+   
+  }
+
+  .loading-text::before {
+    content: "Loading...";
+    animation: text-changing 21s steps(6) forwards;
+  }
+
+  @keyframes spacing {
+    0% { letter-spacing: normal;}
+    50% {letter-spacing: 5px;}
+    100% {letter-spacing: normal;}
+  }
+
+  @keyframes text-changing {
+    0% { content: "Loading...";}
+    20% { content: "Fetching your data.";}
+    50% { content: "Be patient, idiot.";}
+    70% { content: "Ur a cutie hehehe.";}
+    85% { content: "Almost there...";}
+    95% { content: "Almost there..."; }
+    100% { content: "Message is ready!"}
+  }
+  @keyframes loading {
+    0% {
+      left: -100%
+    }
+    20% {left: -90%}
+    30% {left: -80%}
+    50% {left: -50%}
+    80% {left: -20%}
+    81% {left: -10%}
+    82% {left: -5%}
+    96% {left: -5%}
+    97% {left: -3%}
+    98% {left: -3%}
+    99% {left: -1%}
+    100% {left: 0%}
+  }
+
+.view-message{
+  margin: 0 auto;
+  font-family: "VT323";
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin-top: 12px;
+  padding: 4px;
+  background-color: #fba7bd;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 4px ;
+  padding-bottom: 4px;
+  opacity: 0;
+  animation: btn-fade-in 0.5s;
+  animation-delay: 21s;
+  animation-fill-mode: forwards;
+}
+
+.view-message-1 {
+  margin: 0 auto;
+  font-family: "VT323";
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin-top: 12px;
+  padding: 4px;
+  background-color: #fba7bd;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 4px ;
+  padding-bottom: 4px;
+  left: 20%;
+  top: 30%;
+  position: absolute;
+}
+
+@keyframes btn-fade-in {
+  to {opacity: 1;}
+}
