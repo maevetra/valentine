@@ -71,7 +71,8 @@
   @keyframes text-changing {
     0% { content: "Loading...";}
     20% { content: "Fetching your data.";}
-    50% { content: "Be patient, idiot.";}
+    35% { content: "Be patient, idiot."}
+    50% { content: "Are you French? Because Eiffel for you.";}
     70% { content: "Ur a cutie hehehe.";}
     85% { content: "Almost there...";}
     95% { content: "Almost there..."; }

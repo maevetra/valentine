@@ -10,7 +10,7 @@ const Letter = () => {
             <div className='card'>
                 <p className='message'><i>Roses are red,
                 <br/>Violets are blue,
-                <br/>I cannot rhyme, but I'm glad my Valentine is </i><b>you</b>.
+                <br/>I cannot rhyme, but at least my Valentine is </i><b>you</b>.
                 </p>
                 <img src={process.env.PUBLIC_URL + '/heart_pink.png'} alt='img'/>
             </div>
